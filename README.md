@@ -10,7 +10,7 @@ Lets user pick more than one date from the date picker.
 
 ## Motivation
 
-This is a fork of `react-multiple-datepicker`. I needed a date picker that is built on [Material-UI](https://github.com/mui-org/material-ui) and supports multiple dates selections, couldn't find one, so here it is!
+This is a fork of `mui-multiple-dates-picker`. I needed a date picker that is built on [Material-UI](https://github.com/mui-org/material-ui) and supports multiple dates selections, it was built by @randex and I needed a version compatible with MUI v5 and react v18. So I forked and migrated his library
 
 ## Features
 
@@ -26,13 +26,13 @@ This is a fork of `react-multiple-datepicker`. I needed a date picker that is bu
 To install the component run this command:
 
 ```
-npm i -S @randex/material-ui-multiple-dates-picker
+npm i -S npm i mui-multiple-dates-picker
 ```
 
 ## Usage example
 
 ```javascript
-import MultipleDatesPicker from '@randex/material-ui-multiple-dates-picker'
+import MultipleDatesPicker from 'mui-multiple-dates-picker'
 
 const Example = () => {
   const [open, setOpen] = useState(false)
@@ -77,7 +77,7 @@ const Example = () => {
 
 I don't have enough time to maintain this library, so pull requests will be greatly appreciated!
 
-1. Clone the repository: `git clone https://github.com/randex/material-ui-multiple-dates-picker.git`
+1. Clone the repository: `git clone https://github.com/Shiftrdw/material-ui-multiple-dates-picker.git`
 2. Get inside the folder: `cd material-ui-multiple-dates-picker`
 3. Install all the general dependencies: `npm i`
 4. Get inside the `app` folder: `cd app`
