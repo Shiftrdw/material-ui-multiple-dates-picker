@@ -10,7 +10,7 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.default,
     display: 'flex',
     flexDirection: 'column',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       display: 'none'
     }
   },

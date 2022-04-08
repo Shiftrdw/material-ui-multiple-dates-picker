@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     minHeight: 482,
     maxHeight: 482,
     display: 'flex',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       margin: theme.spacing(1),
     }
   }
