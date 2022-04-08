@@ -13,7 +13,7 @@ var _Week = _interopRequireDefault(require("./Week"));
 
 var _dateUtils = require("./dateUtils");
 
-var _styles = require("@material-ui/styles");
+var _styles = require("@mui/styles");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

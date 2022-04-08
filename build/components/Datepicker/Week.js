@@ -11,7 +11,7 @@ var _utils = _interopRequireDefault(require("./utils"));
 
 var _dateUtils = require("./dateUtils");
 
-var _styles = require("@material-ui/styles");
+var _styles = require("@mui/styles");
 
 var _Circle = _interopRequireDefault(require("./Circle"));
 
@@ -50,14 +50,14 @@ var styles = function styles(theme) {
     },
     day: _defineProperty({
       margin: "0 ".concat(theme.spacing(1), "px")
-    }, theme.breakpoints.down('xs'), {
+    }, theme.breakpoints.down('sm'), {
       margin: "0 2px"
     }),
     blank: _defineProperty({
       width: 36,
       height: 36,
       margin: "0 ".concat(theme.spacing(1), "px")
-    }, theme.breakpoints.down('xs'), {
+    }, theme.breakpoints.down('sm'), {
       margin: "0 2px"
     })
   };

@@ -5,7 +5,7 @@ import { defaultUtils as utils } from './dateUtils'
 import CalendarToolbar from './CalendarToolbar'
 import CalendarButtons from './CalendarButtons'
 import DateDisplay from './DateDisplay'
-import { makeStyles } from '@material-ui/core'
+import makeStyles from '@mui/styles/makeStyles';
 
 // const Root = styled.div`
 //   color: rgba(0, 0, 0, 0.87);
@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'space-between',
     flexDirection: 'column',
-    padding: `0 ${theme.spacing(1)}px`
+    padding: `0 ${theme.spacing(1)}`
   }
 }))
 

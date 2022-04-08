@@ -1,6 +1,6 @@
 import React from 'react'
-import { Typography } from '@material-ui/core'
-import { makeStyles } from '@material-ui/styles'
+import { Typography } from '@mui/material'
+import { makeStyles } from '@mui/styles'
 import moment from 'moment'
 
 const useStyles = makeStyles(theme => ({
@@ -13,8 +13,8 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(1),
     '& > *': {
       width: 36,
-      margin: `0 ${theme.spacing(1)}px`,
-      [theme.breakpoints.down('xs')]: {
+      margin: `0 ${theme.spacing(1)}`,
+      [theme.breakpoints.down('sm')]: {
         margin: `0 2px`,
       }
     }

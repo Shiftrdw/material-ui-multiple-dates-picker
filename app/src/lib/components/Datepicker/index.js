@@ -2,16 +2,16 @@ import React, { useReducer, useCallback, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import DateUtilities from './utils'
 import Calendar from './Calendar'
-import { Dialog } from '@material-ui/core'
-import { makeStyles } from '@material-ui/styles'
+import { Dialog } from '@mui/material'
+import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles(theme => ({
   dialogPaper: {
     minHeight: 482,
     maxHeight: 482,
     display: 'flex',
-    [theme.breakpoints.down('xs')]: {
-      margin: `${theme.spacing(1)}px`,
+    [theme.breakpoints.down('sm')]: {
+      margin: theme.spacing(1),
     }
   }
 }))

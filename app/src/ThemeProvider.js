@@ -1,38 +1,18 @@
-import React, { createContext, useState, useCallback } from 'react'
-import { createMuiTheme } from '@material-ui/core/styles'
-import MuiThemeProvider from '@material-ui/styles/ThemeProvider'
-import orange from '@material-ui/core/colors/orange'
-import purple from '@material-ui/core/colors/purple'
+import React from 'react'
+import { ThemeProvider, createMuiTheme } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
-function createTheme (light) {
-  const theme = {
-    palette: {
-      type: light ? 'light' : 'dark',
-      primary: orange,
-      secondary: purple
-    }
-  }
+const theme = createMuiTheme();
 
-  return createMuiTheme(theme)
-}
+const useStyles = makeStyles((theme) => {
+});
 
-export const ThemeContext = createContext({})
-
-function ThemeProvider ({ children }) {
-  const [theme, setTheme] = useState(createTheme(true))
-
-  const setThemeType = useCallback(
-    type => {
-      setTheme(createTheme(type === 'light'))
-    },
-    [setTheme]
-  )
+function ThemeProviderRoot ({ children }) {// eslint-disable-next-line
+  const classes = useStyles()
 
   return (
-    <MuiThemeProvider theme={theme}>
-      <ThemeContext.Provider value={{ theme, setThemeType }}>{children}</ThemeContext.Provider>
-    </MuiThemeProvider>
+    <ThemeProvider theme={theme}>{children}</ThemeProvider>
   )
 }
 
-export default ThemeProvider
+export default ThemeProviderRoot

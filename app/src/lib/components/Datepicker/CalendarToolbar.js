@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { IconButton, Typography, withStyles } from '@material-ui/core'
-import LeftIcon from '@material-ui/icons/ArrowLeft'
-import RightIcon from '@material-ui/icons/ArrowRight'
+import { IconButton, Typography } from '@mui/material';
+import withStyles from '@mui/styles/withStyles';
+import LeftIcon from '@mui/icons-material/ArrowLeft'
+import RightIcon from '@mui/icons-material/ArrowRight'
 import moment from 'moment'
 import { capitalizeFirstLetter } from './utils'
 
@@ -12,7 +13,7 @@ const styles = theme => ({
     alignItems: 'center',
     alignContent: 'center',
     justifyContent: 'space-between',
-    margin: `${theme.spacing(1)}px 0`
+    margin: `${theme.spacing(1)} 0`
   }
 })
 
@@ -54,15 +55,21 @@ class CalendarToolbar extends Component {
 
     return (
       <div className={classes.root}>
-        <IconButton disabled={!this.props.prevMonth} onClick={this.handleTouchTapPrevMonth}>
+        <IconButton
+          disabled={!this.props.prevMonth}
+          onClick={this.handleTouchTapPrevMonth}
+          size="large">
           <LeftIcon />
         </IconButton>
         <Typography variant='subtitle1'>{capitalizeFirstLetter(dateTimeFormatted)}</Typography>
-        <IconButton disabled={!this.props.nextMonth} onClick={this.handleTouchTapNextMonth}>
+        <IconButton
+          disabled={!this.props.nextMonth}
+          onClick={this.handleTouchTapNextMonth}
+          size="large">
           <RightIcon />
         </IconButton>
       </div>
-    )
+    );
   }
 }
 

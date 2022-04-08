@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { withStyles, List, ListItem, ListItemText, Typography } from '@material-ui/core'
-import DeleteIcon from '@material-ui/icons/Clear'
+import { List, ListItem, ListItemText, Typography } from '@mui/material';
+import withStyles from '@mui/styles/withStyles';
+import DeleteIcon from '@mui/icons-material/Clear'
 import moment from 'moment'
 
 const styles = theme => ({
@@ -9,7 +10,7 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.default,
     display: 'flex',
     flexDirection: 'column',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
       display: 'none'
     }
   },

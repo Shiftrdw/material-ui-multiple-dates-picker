@@ -1,7 +1,9 @@
 import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import { makeStyles, Typography, ButtonBase } from '@material-ui/core'
+import { Typography, ButtonBase } from '@mui/material';
+
+import makeStyles from '@mui/styles/makeStyles';
 
 const useCircleStyles = makeStyles(theme => ({
   root: {
@@ -28,7 +30,7 @@ const useCircleStyles = makeStyles(theme => ({
   },
   checkedText: {
     color:
-      theme.palette.type === 'dark'
+      theme.palette.mode === 'dark'
         ? theme.palette.getContrastText(theme.palette.primary.main)
         : theme.palette.common.white
   },

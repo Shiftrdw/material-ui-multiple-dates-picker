@@ -19,7 +19,7 @@ var _CalendarButtons = _interopRequireDefault(require("./CalendarButtons"));
 
 var _DateDisplay = _interopRequireDefault(require("./DateDisplay"));
 
-var _core = require("@material-ui/core");
+var _core = require("@mui/material");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

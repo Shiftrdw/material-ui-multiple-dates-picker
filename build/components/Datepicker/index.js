@@ -13,9 +13,9 @@ var _utils = _interopRequireDefault(require("./utils"));
 
 var _Calendar = _interopRequireDefault(require("./Calendar"));
 
-var _core = require("@material-ui/core");
+var _core = require("@mui/material");
 
-var _styles = require("@material-ui/styles");
+var _styles = require("@mui/styles");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -49,7 +49,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       minHeight: 482,
       maxHeight: 482,
       display: 'flex'
-    }, theme.breakpoints.down('xs'), {
+    }, theme.breakpoints.down('sm'), {
       margin: "".concat(theme.spacing(1), "px")
     })
   };

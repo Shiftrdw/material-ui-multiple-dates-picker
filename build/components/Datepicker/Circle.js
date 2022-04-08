@@ -11,7 +11,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _classnames = _interopRequireDefault(require("classnames"));
 
-var _core = require("@material-ui/core");
+var _core = require("@mui/material");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -44,7 +44,7 @@ var useCircleStyles = (0, _core.makeStyles)(function (theme) {
       background: theme.palette.action.disabled
     },
     checkedText: {
-      color: theme.palette.type === 'dark' ? theme.palette.getContrastText(theme.palette.primary.main) : theme.palette.common.white
+      color: theme.palette.mode === 'dark' ? theme.palette.getContrastText(theme.palette.primary.main) : theme.palette.common.white
     },
     text: {
       textAlign: 'center'

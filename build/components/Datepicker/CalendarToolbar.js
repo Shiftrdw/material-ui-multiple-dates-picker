@@ -9,11 +9,11 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _core = require("@material-ui/core");
+var _core = require("@mui/material");
 
-var _ArrowLeft = _interopRequireDefault(require("@material-ui/icons/ArrowLeft"));
+var _ArrowLeft = _interopRequireDefault(require("@mui/icons-material/ArrowLeft"));
 
-var _ArrowRight = _interopRequireDefault(require("@material-ui/icons/ArrowRight"));
+var _ArrowRight = _interopRequireDefault(require("@mui/icons-material/ArrowRight"));
 
 var _moment = _interopRequireDefault(require("moment"));
 

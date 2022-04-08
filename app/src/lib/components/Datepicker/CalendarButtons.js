@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, DialogActions } from '@material-ui/core'
+import { Button, DialogActions } from '@mui/material'
 
 // const Root = styled.div`
 //   display: flex;

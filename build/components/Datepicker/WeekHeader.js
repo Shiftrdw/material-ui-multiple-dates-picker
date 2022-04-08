@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _core = require("@material-ui/core");
+var _core = require("@mui/material");
 
-var _styles = require("@material-ui/styles");
+var _styles = require("@mui/styles");
 
 var _moment = _interopRequireDefault(require("moment"));
 
@@ -31,7 +31,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       '& > *': _defineProperty({
         width: 36,
         margin: "0 ".concat(theme.spacing(1), "px")
-      }, theme.breakpoints.down('xs'), {
+      }, theme.breakpoints.down('sm'), {
         margin: "0 2px"
       })
     }

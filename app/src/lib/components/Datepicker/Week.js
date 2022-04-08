@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import DateUtilities from './utils'
 import { dateTimeFormat } from './dateUtils'
-import { withStyles } from '@material-ui/styles'
+import { withStyles } from '@mui/styles'
 import Circle from './Circle'
 
 const styles = theme => ({
@@ -13,16 +13,16 @@ const styles = theme => ({
     marginBottom: theme.spacing(2)
   },
   day: {
-    margin: `0 ${theme.spacing(1)}px`,
-    [theme.breakpoints.down('xs')]: {
+    margin: `0 ${theme.spacing(1)}`,
+    [theme.breakpoints.down('sm')]: {
       margin: `0 2px`,
     }
   },
   blank: {
     width: 36,
     height: 36,
-    margin: `0 ${theme.spacing(1)}px`,
-    [theme.breakpoints.down('xs')]: {
+    margin: `0 ${theme.spacing(1)}`,
+    [theme.breakpoints.down('sm')]: {
       margin: `0 2px`,
     }
   }

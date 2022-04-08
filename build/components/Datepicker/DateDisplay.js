@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _core = require("@material-ui/core");
+var _core = require("@mui/material");
 
-var _Clear = _interopRequireDefault(require("@material-ui/icons/Clear"));
+var _Clear = _interopRequireDefault(require("@mui/icons-material/Clear"));
 
 var _moment = _interopRequireDefault(require("moment"));
 
@@ -44,7 +44,7 @@ var styles = function styles(theme) {
       backgroundColor: theme.palette.background["default"],
       display: 'flex',
       flexDirection: 'column'
-    }, theme.breakpoints.down('xs'), {
+    }, theme.breakpoints.down('sm'), {
       display: 'none'
     }),
     header: {
