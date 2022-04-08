@@ -1,8 +1,6 @@
 {
   "name": "example",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://randex.github.io/material-ui-multiple-dates-picker/",
   "dependencies": {
     "moment": "^2.24.0",
     "react": "^18.0.0",
