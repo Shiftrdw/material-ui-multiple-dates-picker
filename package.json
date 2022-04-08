@@ -1,6 +1,6 @@
 {
   "name": "mui-multiple-dates-picker",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Date Picker with multiple selection based on Material UI, forked from @randex. Migrated to MUI v5 by @Shiftrdw",
   "main": "./build/index.js",
   "scripts": {
