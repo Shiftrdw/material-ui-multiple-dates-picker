@@ -1,7 +1,7 @@
 {
-  "name": "@randex/material-ui-multiple-dates-picker",
+  "name": "mui-multiple-dates-picker",
   "version": "0.4.0",
-  "description": "Date Picker with multiple selection based on Material UI",
+  "description": "Date Picker with multiple selection based on Material UI, forked from @randex. Migrated to MUI v5 by @Shiftrdw",
   "main": "./build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
@@ -21,16 +21,15 @@
     "datepicker"
   ],
   "author": {
-    "name": "Ruslan Murin",
-    "email": "randexdev@gmail.com",
-    "url": "http://randexdev.com"
+    "name": "Ruslan Murin/Ridhwan",
+    "email": "randexdev@gmail.com"
   },
   "contributors": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/randex/react-multiple-datepicker/issues"
+    "url": "https://github.com/Shiftrdw/react-multiple-datepicker/issues"
   },
-  "homepage": "https://github.com/randex/react-multiple-datepicker#readme",
+  "homepage": "https://github.com/Shiftrdw/react-multiple-datepicker#readme",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
